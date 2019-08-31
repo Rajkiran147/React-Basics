@@ -19,7 +19,7 @@ export default class App extends Component {
     })
   }
   async componentDidMount() {
-    const response = await axios.get('http://jsonplaceholder.typicode.com/users');
+    const response = await axios.get('https://jsonplaceholder.typicode.com/users');
     this.setState({ monsters: response.data });
   }
   render() {
